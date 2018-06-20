@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+                <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div id="burger-nav"></div>
+                    <div class="menu">
+                        <ul>
+                            <li>TEXT</li>
+                            <li>TEXT</li>
+                            <li>TEXT</li>
+                            <li>TEXT</li>
+                            <li>TEXT</li>
+                            <li>TEXT</li>
+                        </ul>
+                    </div>
+        </div> 
+    </nav>
+    <div class="banner">
+        <img src="images/banner.jpg" alt="">
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <!-- fetures -->
+            <div class="features">
+                <ul>
+                    <li>
+                        <img src="images/icon-1.png" alt="">
+                        <h4>Placeholder</h4>
+                        <p>Nulla vitae  libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-2.png" alt="">
+                        <h4>Placeholder</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis porro alias obcaecati nihil
+                            expedita consectetur ullam repellendus quod.</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-3.png" alt="">
+                        <h4>Placeholder</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis porro alias obcaecati nihil
+                            expedita consectetur ullam repellendus quod.</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-4.png" alt="">
+                        <h4>Placeholder</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis porro alias obcaecati nihil
+                            expedita consectetur ullam repellendus quod.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- latest works -->
+            <div class="works">
+                <h3>Our Latest Works</h3>
+                <ul>
+                    <li>
+                        <img src="images/snap-1.jpg" alt="">
+                        <h4>Nobis Business Card</h4>
+                        <p class="des">Business Card, Graphic</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam quia doloremque ut ex.
+                            Tempora cumque adipisci omnis architecto, sunt nostrum tenetur culpa quo doloribus?</p>
+                    </li>
+                    <li>
+                        <img src="images/snap-2.jpg" alt="">
+                        <h4>Nobis Business Card</h4>
+                        <p class="des">Business Card, Graphic</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam quia doloremque ut ex.
+                            Tempora cumque adipisci omnis architecto, sunt nostrum tenetur culpa quo doloribus?</p>
+                    </li>
+                    <li>
+                        <img src="images/snap-3.jpg" alt="">
+                        <h4>Nobis Business Card</h4>
+                        <p class="des">Business Card, Graphic</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam quia doloremque ut ex.
+                            Tempora cumque adipisci omnis architecto, sunt nostrum tenetur culpa quo doloribus?</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="quote">
+            <img src="images/quote.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur perspiciatis porro deleniti natus sequi, nobis
+                sit repudiandae quasi molestiae! Delectus.</p>
+        </div>
+    </div>
+    <footer>
+
+        <div class="container">
+            <ul>
+                <li>
+                    <h4>Get In Touch</h4>
+                </li>
+                <li>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.</li>
+                <li>Moonshine Street No: 14/05</li>
+                <li>Light City, Jupiter</li>
+                <li>0247 541 65 87</li>
+                <li>support@longwave.com</li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>Twitter</h4>
+                </li>
+                <li class="tw">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</li>
+                <li class="tw">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</li>
+                <li class="tw">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>Popular Posts</h4>
+                </li>
+                <li>Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.
+                    <br />14 Nov, 2012</li>
+                <li>Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.
+                    <br />14 Nov, 2012</li>
+                <li>Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.
+                    <br />14 Nov, 2012</li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>About Us</h4>
+                </li>
+                <li>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor
+                    ligula, eget lacinia odio sem nec elit.</li>
+                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit tempus.</li>
+            </ul>
+            <div id="copyright">&copy; 2015 Marble. All rights reserved. Theme by elemis.</div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+    $(function(){
+        $('#burger-nav').click(function(){
+            $('nav .menu').toggleClass('auto');
+        })
+        $('.features li img').click(function(){
+            $(this).toggleClass('rotate');
+        })
+    })
+    </script>
+</body>
+
+</html>

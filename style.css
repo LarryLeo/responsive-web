@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f7f7f7;
+}
+.container {
+    width: 96%;     
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+nav {
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: #e7e7e7;
+}
+nav .logo {
+    float: left;
+}
+nav .menu {
+    float: right;
+}
+nav .menu ul {
+    overflow: hidden;
+}
+nav .menu li {
+    float: left;
+    margin-right: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.banner img {
+    width: 100%;
+}
+.features {
+    overflow: hidden;
+    margin-top: 50px;
+    border-bottom: 1px solid #c7c2c2;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    
+}
+.features li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.features li h4 {
+    margin: 20px 0;
+}
+.features li p {
+    line-height: 30px;
+}
+
+.works {
+    padding-bottom: 50px;
+}
+.works ul {
+    overflow: hidden;
+}
+.works h3 {
+    font-size: 22px;
+    margin: 20px 0;
+}
+.works li {
+    float: left;
+    width: 32%;
+}
+.works li:nth-child(2) {
+    margin: 0 2%;
+}
+.works li img {
+    width: 100%;
+}
+.works li h4 {
+    margin: 10px 0;
+}
+.works li p.des {
+    font-size: 14px;
+    color: rgb(135, 138, 141)
+}
+
+.works p {
+    line-height: 30px;
+}
+.quote {
+    text-align: center;
+    background-color: #efefef;
+    padding: 40px 0;
+}
+.quote p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+}
+footer {
+    overflow: hidden;
+    padding: 50px 0;
+    background-color: #202020;
+    color: #aaa;
+}
+footer ul {
+    float: left;
+    width: 22%;
+    margin-right: 3%;
+    overflow: hidden;
+}
+footer h4 {
+    color: #555;
+    margin-bottom: 50px;
+}
+footer li {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#copyright {
+    clear: both;
+    padding-top: 30px;
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    border-top: 2px solid #333;
+    color: #999;
+    font-size: 14px;
+}
+
+@media screen and (max-width:768px) {
+    .features li {
+        width: 50%;
+    }
+    footer ul {
+        width: 40%;
+        margin-bottom: 20px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        width: 100%;
+    }
+    nav {
+        padding-bottom: 0;
+    }
+    #burger-nav {
+        width: 100%;
+        height: 40px;
+        background: url(images/burger.png) no-repeat 98% center;
+        background-color: #555;
+        cursor: pointer;
+    }
+    nav .logo {
+        float: none;
+        text-align: center;
+    }
+    nav .menu {
+        float: none;
+        background-color: #555;
+        color: #999;
+        height: 0;
+        transition: all .3s ease-in;
+        
+    }
+    nav .menu.auto {
+        height: 40vh;
+    }
+    nav .menu li {
+        float: none;
+        padding: 5px 10px;
+        border-top: 1px solid #4f4f4f;
+    }
+    .features li {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .features li img {
+        display: block;
+        margin: 0 auto;
+        transition: all .3s ease-in;
+    }
+    .features li img.rotate {
+        transform: rotate(180deg);
+    }
+    .works li {
+        width: 80%;
+        margin: 30px 10% !important;
+    }
+    .works h3 {
+        text-align: center;
+    }
+    footer ul {
+        float: none;
+        width: 80%;
+        margin: 0 auto 30px auto;
+    }
+}
